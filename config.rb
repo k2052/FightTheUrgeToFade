@@ -15,6 +15,9 @@ set :layout,          :main
 set :markdown_engine, :redcarpet
 set :markdown,        :renderer => MarkdownExtRenderer, :with_toc_data => true
 
+# Set Build Dir
+set :build_dir, "tmp"
+
 # Build-specific configuration
 configure :build do
   activate :cache_buster
